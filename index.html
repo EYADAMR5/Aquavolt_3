@@ -3,103 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaVolt | Sustainable Hydro Energy</title>
+    <title>AquaVolt | Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        :root { --navy: #0a192f; --blue: #007bff; --light-blue: #e6f1ff; }
-        body { font-family: 'Lexend', sans-serif; background-color: #ffffff; color: #333; }
+        :root { --navy: #0a192f; --blue: #007bff; }
+        body { font-family: 'Lexend', sans-serif; }
         .navbar { background-color: var(--navy) !important; padding: 15px 0; }
-        
-        /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.85)), 
+            background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), 
                         url('https://images.unsplash.com/photo-1508433957232-3107f5ed2035?q=80&w=2000');
             background-size: cover; background-position: center;
-            height: 100vh; display: flex; align-items: center; color: white;
+            height: 100vh; display: flex; align-items: center; color: white; text-align: center;
         }
-
-        /* Stats Section */
         .stats-bar { background: var(--navy); color: white; padding: 40px 0; border-top: 4px solid var(--blue); }
-
-        /* Features Section */
-        .feature-card {
-            border: 1px solid #eee; padding: 40px; border-radius: 20px;
-            transition: 0.3s; background: white; height: 100%;
-        }
-        .feature-card:hover { transform: translateY(-10px); border-color: var(--blue); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
-        
-        .section-padding { padding: 100px 0; }
-        footer { background: var(--navy); color: white; padding: 50px 0; }
+        .feature-box { padding: 40px; border-radius: 20px; background: #f8f9fa; transition: 0.3s; height: 100%; border: 1px solid #eee; }
+        .feature-box:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+        footer { background: var(--navy); color: white; padding: 30px 0; text-align: center; }
     </style>
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">AQUA<span class="text-primary">VOLT</span></a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active px-3" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="tech.html">Technology</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="contact.html">Team</a></li>
-                </ul>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="tech.html">Technology</a>
+                <a class="nav-link" href="contact.html">Team</a>
             </div>
         </div>
     </nav>
 
-    <section class="hero text-center">
-        <div class="container" data-aos="zoom-in">
-            <h1 class="display-1 fw-bold mb-4">The Future of <span class="text-primary">Hydro Energy</span></h1>
-            <p class="lead fs-4 mb-5 mx-auto" style="max-width: 800px;">Revolutionizing Egypt's agricultural energy through sustainable Archimedes screw technology.</p>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="tech.html" class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow">Our Technology</a>
-                <a href="contact.html" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill">Meet the Team</a>
-            </div>
+    <section class="hero">
+        <div class="container">
+            <h1 class="display-2 fw-bold mb-4">Renewable <span class="text-primary">Hydro Energy</span></h1>
+            <p class="lead fs-4 mb-5 mx-auto" style="max-width: 800px;">Clean, sustainable, and innovative power solutions for the future of irrigation.</p>
+            <a href="tech.html" class="btn btn-primary btn-lg px-5 py-3 rounded-pill">Explore Tech</a>
         </div>
     </section>
 
     <div class="stats-bar text-center">
         <div class="container">
             <div class="row">
-                <div class="col-md-4" data-aos="fade-up"><h3>100%</h3><p class="mb-0">Clean Energy</p></div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100"><h3>Zero</h3><p class="mb-0">Carbon Emissions</p></div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200"><h3>25+ Years</h3><p class="mb-0">Lifespan</p></div>
+                <div class="col-md-4"><h3>100%</h3><p>Clean Power</p></div>
+                <div class="col-md-4"><h3>Zero</h3><p>Carbon Footprint</p></div>
+                <div class="col-md-4"><h3>Eco</h3><p>Friendly Design</p></div>
             </div>
         </div>
     </div>
 
-    <section class="section-padding">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h2 class="display-4 fw-bold mb-4">Why AquaVolt?</h2>
-                    <p class="fs-5 text-muted">We provide innovative hydro-energy solutions using polymer-based turbines. Our design is specifically engineered for low-head water flow in Egypt's canal systems, making energy accessible for every farm.</p>
-                    <ul class="list-unstyled mt-4">
-                        <li class="mb-3">✅ <strong>Corrosion Resistant:</strong> High-quality polymers.</li>
-                        <li class="mb-3">✅ <strong>Fish Friendly:</strong> Safe for local ecosystems.</li>
-                        <li class="mb-3">✅ <strong>Low Maintenance:</strong> Designed for durability.</li>
-                    </ul>
+    <section class="container py-5">
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <h4 class="fw-bold">Efficiency</h4>
+                    <p class="text-muted">Optimized Archimedes screws for maximum energy extraction from low-flow canals.</p>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1000" class="img-fluid rounded-4 shadow-lg" alt="Hydro Energy">
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <h4 class="fw-bold">Durability</h4>
+                    <p class="text-muted">Built with advanced polymers to withstand corrosion and harsh environments.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <h4 class="fw-bold">Impact</h4>
+                    <p class="text-muted">Providing sustainable energy to rural areas without harming aquatic life.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container text-center">
-            <h3 class="fw-bold mb-4">AQUAVOLT</h3>
-            <p class="opacity-50">Innovation from STEM El Sadat City Students</p>
-            <hr class="my-4 opacity-25">
-            <p class="small">&copy; 2026 AquaVolt Project. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
+    <footer><p class="mb-0">&copy; 2026 AquaVolt Project</p></footer>
 </body>
 </html>
